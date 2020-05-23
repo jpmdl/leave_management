@@ -9,6 +9,8 @@ namespace leave_management.Contracts
 
         T FindById(int id);
 
+        bool Exists(int id);
+
         bool Create(T entity); // Create some entity of type T (generic)
 
         bool Update(T entity);

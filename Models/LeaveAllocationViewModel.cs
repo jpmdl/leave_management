@@ -20,7 +20,7 @@ namespace leave_management.Models
         public string EmployeeId { get; set; }
 
         // Details will have everything we need
-        public DetailsLeaveTypeViewModel LeaveType { get; set; }
+        public LeaveTypeViewModel LeaveType { get; set; }
 
         public int LeaveTypeId { get; set; }
 

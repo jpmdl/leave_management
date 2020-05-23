@@ -3,6 +3,7 @@ using leave_management.Data;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace leave_management.Repository
 {
@@ -55,6 +56,11 @@ namespace leave_management.Repository
         {
             int changes = _db.SaveChanges();  // Returns integer for how many records changed.
             return changes > 0;
+        }
+
+        public bool Exists(int id)
+        {
+            return _db.LeaveTypes.Any(q => q.Id == id);
         }
     }
 }

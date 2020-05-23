@@ -11,8 +11,7 @@ namespace leave_management.Mappings
         public Maps()
         {
             // Source, Destination
-            CreateMap<LeaveType, DetailsLeaveTypeViewModel>().ReverseMap(); // ReverseMap can map in either direction.
-            CreateMap<LeaveType, CreateLeaveTypeViewModel>().ReverseMap(); // ReverseMap can map in either direction.
+            CreateMap<LeaveType, LeaveTypeViewModel>().ReverseMap(); // ReverseMap can map in either direction.
             CreateMap<LeaveAllocation, LeaveAllocationViewModel>().ReverseMap(); // ReverseMap can map in either direction.
             CreateMap<LeaveHistory, LeaveHistoryViewModel>().ReverseMap(); // ReverseMap can map in either direction.
             CreateMap<Employee, EmployeeViewModel>().ReverseMap(); // ReverseMap can map in either direction.

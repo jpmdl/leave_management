@@ -18,6 +18,7 @@ namespace leave_management.Controllers
             _logger = logger;
         }
 
+        // Goes to Home folder (same as the name of Controller) and looks for a file named Index
         public IActionResult Index()
         {
             return View();
